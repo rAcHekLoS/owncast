@@ -196,7 +196,7 @@ export const OwncastPlayer: FC<OwncastPlayerProps> = ({
   });
 
   const videoJsOptions = {
-    autoplay: false,
+    autoplay: true,
     controls: true,
     responsive: true,
     fluid: false,
