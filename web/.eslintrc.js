@@ -22,7 +22,12 @@ module.exports = {
   plugins: ['react', 'prettier', '@typescript-eslint', 'import'],
   ignorePatterns: ['!./storybook/**'],
   rules: {
-    'prettier/prettier': 'error',
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
     'react/destructuring-assignment': 'off',
     'react/prop-types': 0,
     'react/react-in-jsx-scope': 'off',
